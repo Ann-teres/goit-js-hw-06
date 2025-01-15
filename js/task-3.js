@@ -15,19 +15,23 @@ constructor(initialItems) {
     this._value = str + this._value; 
   }
   
+
     padBoth(str) {
         this._value = str + this._value + str;
     }
 
-     getValue() {
-    return this._value;
-  }
 }
 const builder = new StringBuilder(".");
 console.log(builder.getValue()); // "."
+
 builder.padStart("^");
 console.log(builder.getValue()); // "^."
+
 builder.padEnd("^");
 console.log(builder.getValue()); // "^.^"
+
 builder.padBoth("=");
 console.log(builder.getValue()); // "=^.^="
+
+
+
